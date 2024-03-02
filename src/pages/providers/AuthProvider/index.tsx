@@ -54,7 +54,7 @@ const useStateContext = () => {
   const context = useContext(AuthStateContext);
 
   if (context == undefined) {
-    throw new Error("useAuthState must be used within a LibrarianProvider");
+    throw new Error("useAuthState must be used within a AuthProvider");
   }
 
   return context;
@@ -64,7 +64,7 @@ const useActionsContext = () => {
   const context = useContext(AuthStateContext);
 
   if (context == undefined) {
-    throw new Error('useAuthActions must be used within a LibrarianProvider');
+    throw new Error('useAuthActions must be used within a AuthProvider');
   }
 
   return context;
