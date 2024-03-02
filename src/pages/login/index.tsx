@@ -17,7 +17,6 @@ const Login: React.FC = () => {
     login(input).then((response) => {
       localStorage.setItem('token', response.result.accessToken);
       localStorage.setItem('userId', response.result.userId.toString());
-      debugger
       if(response.success){
         navigate('/home', { replace: true });
       }
